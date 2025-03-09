@@ -31,5 +31,6 @@ Developed a Form Page that captures and displays submitted data on a separate pa
 You can view the project on GitHub and the live version on Netlify using the following links:
 
 GitHub Repository: [https://github.com/shivam3245/vibecopilot-frontend-task]
+
 Live Site (Netlify): [https://vibecopilottest.netlify.app/]
 
