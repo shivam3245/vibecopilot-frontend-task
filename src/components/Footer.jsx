@@ -2,7 +2,7 @@ const Footer = () => {
     return (
         <footer className="bg-black text-white ">
 
-            {/* Copyright Section */}
+
             <div className="text-center text-gray-400 text-sm border-t border-gray-700 p-4">
                 <p>
                     <strong>Copyright © 2025</strong> <span className="text-white">Shivam Yadav Limited</span> All rights reserved

@@ -61,7 +61,7 @@ const Services = () => {
                     </div>
                 </div>
 
-                {/* Call to Action */}
+
                 <div className="mt-10">
                     <button className="bg-green-500 w-full sm:w-auto px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition-all">
                         Get Started

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { loginUser, registerUser, selectAuth } from "../redux/store";
 import { useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { Eye, EyeOff } from "lucide-react"; // Import the eye icons from lucide-react
+import { Eye, EyeOff } from "lucide-react";
 
 const AuthPage = () => {
     const dispatch = useDispatch();
@@ -71,7 +71,9 @@ const AuthPage = () => {
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-black to-gray-600 p-6">
+
             <div className="relative w-full max-w-md bg-green-100 bg-opacity-10 backdrop-blur-lg rounded-xl shadow-lg p-6 overflow-hidden flex flex-row">
+
                 <AnimatePresence mode="wait">
                     {isLogin ? (
                         <motion.div

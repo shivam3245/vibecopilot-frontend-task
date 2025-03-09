@@ -1,18 +1,23 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    formData: [],
-};
+let storedFormData = JSON.parse(localStorage.getItem("formData")) || [];
 
 const formSlice = createSlice({
-    name: 'form',
-    initialState,
+    name: "form",
+    initialState: {
+        submissions: storedFormData,
+    },
     reducers: {
-        submitForm: (state, action) => {
-            state.formData.push(action.payload);
+        updateForm: (state, action) => {
+            state.submissions.push(action.payload);
+            localStorage.setItem("formData", JSON.stringify(state.submissions));
+        },
+        resetForm: (state) => {
+            state.submissions = [];
+            localStorage.removeItem("formData");
         },
     },
 });
 
-export const { submitForm } = formSlice.actions;
+export const { updateForm, resetForm } = formSlice.actions;
 export default formSlice.reducer;

@@ -28,10 +28,8 @@ const Contact = () => {
                     Have any questions or need support? Feel free to reach out to us. We’d love to hear from you!
                 </p>
 
-                {/* Contact Form */}
                 <div className="mt-8 bg-gray-700 p-4 md:p-6 rounded-lg shadow-lg w-full">
                     <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
-                        {/* Name Input */}
                         <div>
                             <label className="block text-green-400 text-left mb-1">Name</label>
                             <input
@@ -45,7 +43,6 @@ const Contact = () => {
                             />
                         </div>
 
-                        {/* Email Input */}
                         <div>
                             <label className="block text-green-400 text-left mb-1">Email</label>
                             <input
@@ -59,7 +56,6 @@ const Contact = () => {
                             />
                         </div>
 
-                        {/* Message Input */}
                         <div>
                             <label className="block text-green-400 text-left mb-1">Message</label>
                             <textarea
@@ -73,7 +69,6 @@ const Contact = () => {
                             ></textarea>
                         </div>
 
-                        {/* Submit Button */}
                         <button
                             type="submit"
                             className="bg-green-500 w-full sm:w-auto px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition-all"
@@ -83,7 +78,6 @@ const Contact = () => {
                     </form>
                 </div>
 
-                {/* Contact Info */}
                 <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
                         <h2 className="text-lg sm:text-xl font-bold text-green-400">📍 Address</h2>

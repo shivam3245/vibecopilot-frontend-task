@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 mt-15 p-6">
-            <div className="flex h-auto w-auto  justify-center items-center overflow-hidden"> <h1 className="text-xl px-5 md:text-2xl p-2 font-extrabold text-green-400 mb-5 bg-black rounded-l-full rounded-r-full font-sans"><em>Data From Fake API</em></h1></div>
+            <div className="flex h-auto w-auto  justify-center items-center overflow-hidden"> <h1 className="text-lg px-5 md:text-2xl p-2 font-bold md:font-extrabold text-green-400 mb-5 bg-black rounded-l-full rounded-r-full font-sans">Data From Fake API</h1></div>
             {loading ? (
                 <p className="text-center text-lg text-gray-600">Loading posts...</p>
             ) : (

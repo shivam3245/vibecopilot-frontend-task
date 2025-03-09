@@ -21,7 +21,7 @@ const authSlice = createSlice({
                 (u) => u.email === action.payload.email && u.password === action.payload.password
             );
 
-            console.log("User found:", user); // Check if the user exists
+            console.log("User found:", user);
 
             if (user) {
                 state.loggedInUser = user;
